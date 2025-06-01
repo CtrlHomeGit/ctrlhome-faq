@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CtrlHome FAQ - Working Version</title>
 <style>
+  /* Added to fix iframe height calculation issues */
+  html, body {
+    height: auto !important;
+    overflow: visible !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
   body {
     font-family: Georgia, serif;
     background-color: transparent !important;
@@ -193,11 +201,4 @@ document.addEventListener('DOMContentLoaded', () => {
       const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
       const previewText = item.querySelector('.faq-preview').textContent.toLowerCase();
 
-      const matches = question.includes(filter) || answerText.includes(filter) || previewText.includes(filter);
-      item.style.display = matches ? '' : 'none';
-    });
-  });
-});
-</script>
-</body>
-</html>
+      const matches = question.includes(filter) || answerText.includes(filter) ||
