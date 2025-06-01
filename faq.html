@@ -112,57 +112,99 @@
 
     <section aria-label="FAQ List">
       <article class="faq-item">
-        <h3>How do I book an appointment with CtrlHome?</h3>
+        <h3 id="faq1-title">How do I book an appointment with CtrlHome?</h3>
         <p class="faq-preview" tabindex="0">Simply click the “Book Now” button on our site or head straight to our booking page...</p>
-        <p class="faq-answer">
+        <p class="faq-answer" id="faq1-answer" aria-labelledby="faq1-title">
           Simply click the “Book Now” button on our site or head straight to our booking page. We’ll guide you through selecting a time that works best for you. If you want help choosing the right service first, just get in touch!
         </p>
-        <button class="read-more" type="button">Read More</button>
+        <button
+          class="read-more"
+          type="button"
+          aria-expanded="false"
+          aria-controls="faq1-answer"
+        >
+          Read More
+        </button>
       </article>
 
       <article class="faq-item">
-        <h3>Can I reschedule or cancel my appointment?</h3>
+        <h3 id="faq2-title">Can I reschedule or cancel my appointment?</h3>
         <p class="faq-preview" tabindex="0">Absolutely! We understand plans change...</p>
-        <p class="faq-answer">
+        <p class="faq-answer" id="faq2-answer" aria-labelledby="faq2-title">
           Absolutely! We understand plans change. Just contact us at least 24 hours before your appointment, and we’ll happily reschedule or cancel it with no hassle.
         </p>
-        <button class="read-more" type="button">Read More</button>
+        <button
+          class="read-more"
+          type="button"
+          aria-expanded="false"
+          aria-controls="faq2-answer"
+        >
+          Read More
+        </button>
       </article>
 
       <article class="faq-item">
-        <h3>Do you offer remote support?</h3>
+        <h3 id="faq3-title">Do you offer remote support?</h3>
         <p class="faq-preview" tabindex="0">Yes! For many tech issues, we can assist you remotely...</p>
-        <p class="faq-answer">
+        <p class="faq-answer" id="faq3-answer" aria-labelledby="faq3-title">
           Yes! For many tech issues, we can assist you remotely through secure connections. It’s quick, convenient, and just as effective as in-person visits for many cases.
         </p>
-        <button class="read-more" type="button">Read More</button>
+        <button
+          class="read-more"
+          type="button"
+          aria-expanded="false"
+          aria-controls="faq3-answer"
+        >
+          Read More
+        </button>
       </article>
 
       <article class="faq-item">
-        <h3>What devices and brands do you support?</h3>
+        <h3 id="faq4-title">What devices and brands do you support?</h3>
         <p class="faq-preview" tabindex="0">We work with a wide range of smart home devices...</p>
-        <p class="faq-answer">
+        <p class="faq-answer" id="faq4-answer" aria-labelledby="faq4-title">
           We work with a wide range of smart home devices, phones, laptops, routers, and more. If you’re curious about a specific brand or gadget, just ask — we’re always happy to confirm.
         </p>
-        <button class="read-more" type="button">Read More</button>
+        <button
+          class="read-more"
+          type="button"
+          aria-expanded="false"
+          aria-controls="faq4-answer"
+        >
+          Read More
+        </button>
       </article>
 
       <article class="faq-item">
-        <h3>What payment methods do you accept?</h3>
+        <h3 id="faq5-title">What payment methods do you accept?</h3>
         <p class="faq-preview" tabindex="0">We accept most major credit/debit cards...</p>
-        <p class="faq-answer">
+        <p class="faq-answer" id="faq5-answer" aria-labelledby="faq5-title">
           We accept most major credit/debit cards, as well as electronic payments like Apple Pay and Google Pay. You’ll receive a clear invoice after your service.
         </p>
-        <button class="read-more" type="button">Read More</button>
+        <button
+          class="read-more"
+          type="button"
+          aria-expanded="false"
+          aria-controls="faq5-answer"
+        >
+          Read More
+        </button>
       </article>
 
       <article class="faq-item">
-        <h3>Do you offer any guarantees or warranties?</h3>
+        <h3 id="faq6-title">Do you offer any guarantees or warranties?</h3>
         <p class="faq-preview" tabindex="0">Your satisfaction is our priority...</p>
-        <p class="faq-answer">
+        <p class="faq-answer" id="faq6-answer" aria-labelledby="faq6-title">
           Your satisfaction is our priority! We stand behind our work with a 60-day service guarantee and a 14-day follow-up period for service calls. If something isn’t right, just let us know, and we’ll make it right.
         </p>
-        <button class="read-more" type="button">Read More</button>
+        <button
+          class="read-more"
+          type="button"
+          aria-expanded="false"
+          aria-controls="faq6-answer"
+        >
+          Read More
+        </button>
       </article>
     </section>
   </main>
@@ -182,12 +224,14 @@ document.addEventListener('DOMContentLoaded', () => {
         preview.style.overflow = 'hidden';
         preview.style.textOverflow = 'ellipsis';
         button.textContent = 'Read More';
+        button.setAttribute('aria-expanded', 'false');
       } else {
         answer.style.display = 'block';
         preview.style.whiteSpace = 'normal';
         preview.style.overflow = 'visible';
         preview.style.textOverflow = 'clip';
         button.textContent = 'Show Less';
+        button.setAttribute('aria-expanded', 'true');
       }
     });
   });
@@ -201,4 +245,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
       const previewText = item.querySelector('.faq-preview').textContent.toLowerCase();
 
-      const matches = question.includes(filter) || answerText.includes(filter) ||
+      const matches = question.includes(filter) || answerText.includes(filter) || previewText.includes(filter);
+      item.style.display = matches ? '' : 'none';
+    });
+  });
+});
+</script>
+</body>
+</html>
