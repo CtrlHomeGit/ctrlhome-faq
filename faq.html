@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>CtrlHome FAQ - Working Version</title>
 <style>
-  /* Added to fix iframe height calculation issues */
+  /* ... (same styles as before) ... */
   html, body {
     height: auto !important;
     overflow: visible !important;
@@ -69,14 +69,6 @@
     margin: 0 0 12px 0;
     display: none;
   }
-  .faq-preview {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    cursor: pointer;
-    color: #324a7a;
-    margin: 0 0 12px 0;
-  }
   .read-more {
     background: none;
     border: none;
@@ -97,9 +89,9 @@
   <main class="container" role="main" aria-label="Frequently Asked Questions">
     <h1>Frequently Asked Questions</h1>
     <p class="intro">
-      Welcome to the CtrlHome Help Center! We want to make technology easy and friendly.  
+      Welcome to the CtrlHome Help Center! I want to make technology easy and friendly.  
       Below are answers to your common questions — scan, search, and tap “Read More” if you want the full details.  
-      Can’t find what you’re looking for? Just reach out anytime — we’re here to help.
+      Can’t find what you’re looking for? Just reach out anytime — I’m here to help.
     </p>
 
     <input
@@ -111,101 +103,127 @@
     />
 
     <section aria-label="FAQ List">
+
       <article class="faq-item">
-        <h3 id="faq1-title">How do I book an appointment with CtrlHome?</h3>
-        <p class="faq-preview" tabindex="0">Simply click the “Book Now” button on our site or head straight to our booking page...</p>
+        <h3 id="faq1-title">What is CtrlHome and what services do you provide?</h3>
         <p class="faq-answer" id="faq1-answer" aria-labelledby="faq1-title">
-          Simply click the “Book Now” button on our site or head straight to our booking page. We’ll guide you through selecting a time that works best for you. If you want help choosing the right service first, just get in touch!
+          I am your local expert for smart home setup, Wi-Fi network optimization, device onboarding, home office configuration, system maintenance, and personalized digital home consultations. I simplify technology to make your home smarter and more connected.
         </p>
-        <button
-          class="read-more"
-          type="button"
-          aria-expanded="false"
-          aria-controls="faq1-answer"
-        >
-          Read More
-        </button>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq1-answer">Read More</button>
       </article>
 
       <article class="faq-item">
-        <h3 id="faq2-title">Can I reschedule or cancel my appointment?</h3>
-        <p class="faq-preview" tabindex="0">Absolutely! We understand plans change...</p>
+        <h3 id="faq2-title">How do I schedule a consultation or service?</h3>
         <p class="faq-answer" id="faq2-answer" aria-labelledby="faq2-title">
-          Absolutely! We understand plans change. Just contact us at least 24 hours before your appointment, and we’ll happily reschedule or cancel it with no hassle.
+          I prefer that you book consultations and services through my online booking page at <a href="https://ctrlhome.tech/#book" target="_blank" rel="noopener">ctrlhome.tech/#book</a>. However, I will also accept scheduling requests via email or phone.
         </p>
-        <button
-          class="read-more"
-          type="button"
-          aria-expanded="false"
-          aria-controls="faq2-answer"
-        >
-          Read More
-        </button>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq2-answer">Read More</button>
       </article>
 
       <article class="faq-item">
-        <h3 id="faq3-title">Do you offer remote support?</h3>
-        <p class="faq-preview" tabindex="0">Yes! For many tech issues, we can assist you remotely...</p>
+        <h3 id="faq3-title">What areas or regions do you serve?</h3>
         <p class="faq-answer" id="faq3-answer" aria-labelledby="faq3-title">
-          Yes! For many tech issues, we can assist you remotely through secure connections. It’s quick, convenient, and just as effective as in-person visits for many cases.
+          I provide in-person services throughout Northern Colorado, including Greeley and surrounding areas, and can also perform services as far south as Denver.
         </p>
-        <button
-          class="read-more"
-          type="button"
-          aria-expanded="false"
-          aria-controls="faq3-answer"
-        >
-          Read More
-        </button>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq3-answer">Read More</button>
       </article>
 
       <article class="faq-item">
-        <h3 id="faq4-title">What devices and brands do you support?</h3>
-        <p class="faq-preview" tabindex="0">We work with a wide range of smart home devices...</p>
+        <h3 id="faq4-title">What are your business hours and availability?</h3>
         <p class="faq-answer" id="faq4-answer" aria-labelledby="faq4-title">
-          We work with a wide range of smart home devices, phones, laptops, routers, and more. If you’re curious about a specific brand or gadget, just ask — we’re always happy to confirm.
+          My hours are Monday–Friday 6 PM–10 PM, Saturday 8 AM–11 PM, and Sunday 8 AM–7 PM. I am available when you are—offering after-hours service to fit your busy schedule.
         </p>
-        <button
-          class="read-more"
-          type="button"
-          aria-expanded="false"
-          aria-controls="faq4-answer"
-        >
-          Read More
-        </button>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq4-answer">Read More</button>
       </article>
 
       <article class="faq-item">
-        <h3 id="faq5-title">What payment methods do you accept?</h3>
-        <p class="faq-preview" tabindex="0">We accept most major credit/debit cards...</p>
+        <h3 id="faq5-title">How much do your services cost?</h3>
         <p class="faq-answer" id="faq5-answer" aria-labelledby="faq5-title">
-          We accept most major credit/debit cards, as well as electronic payments like Apple Pay and Google Pay. You’ll receive a clear invoice after your service.
+          Service pricing varies depending on the complexity and scope. I offer transparent pricing and will provide a detailed quote tailored to your needs for approval before starting any work.
         </p>
-        <button
-          class="read-more"
-          type="button"
-          aria-expanded="false"
-          aria-controls="faq5-answer"
-        >
-          Read More
-        </button>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq5-answer">Read More</button>
       </article>
 
       <article class="faq-item">
-        <h3 id="faq6-title">Do you offer any guarantees or warranties?</h3>
-        <p class="faq-preview" tabindex="0">Your satisfaction is our priority...</p>
+        <h3 id="faq6-title">Do you provide remote or virtual support options?</h3>
         <p class="faq-answer" id="faq6-answer" aria-labelledby="faq6-title">
-          Your satisfaction is our priority! We stand behind our work with a 60-day service guarantee and a 14-day follow-up period for service calls. If something isn’t right, just let us know, and we’ll make it right.
+          Yes! I offer remote support sessions for troubleshooting, setup guidance, and consultations via phone or video chat, perfect for clients outside my local service area.
         </p>
-        <button
-          class="read-more"
-          type="button"
-          aria-expanded="false"
-          aria-controls="faq6-answer"
-        >
-          Read More
-        </button>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq6-answer">Read More</button>
       </article>
+
+      <article class="faq-item">
+        <h3 id="faq7-title">What brands and devices do you support or work with?</h3>
+        <p class="faq-answer" id="faq7-answer" aria-labelledby="faq7-title">
+          I work with most major smart home brands and devices, including Philips Hue, Ring, Apple HomeKit, Google Nest, Amazon Alexa, Ubiquiti, HomeAssistant, and many more. If you have specific devices, just ask!
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq7-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq8-title">I’m not very tech-savvy — can you help me anyway?</h3>
+        <p class="faq-answer" id="faq8-answer" aria-labelledby="faq8-title">
+          Absolutely. My main goal is to provide the best possible service to those who are not tech-savvy, making technology easy and accessible. I guide you through every step and answer all your questions.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq8-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq9-title">How do you protect my privacy and secure my data?</h3>
+        <p class="faq-answer" id="faq9-answer" aria-labelledby="faq9-title">
+          I prioritize your privacy and use secure methods to protect your personal information. All data handled during services is treated confidentially and never shared without your consent. You can review my full privacy policy at <a href="https://policy.ctrlhome.tech" target="_blank" rel="noopener">policy.ctrlhome.tech</a>.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq9-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq10-title">What should I expect during a typical service visit?</h3>
+        <p class="faq-answer" id="faq10-answer" aria-labelledby="faq10-title">
+          You can expect a punctual, professional visit tailored to your needs. I’ll discuss your goals, perform the agreed-upon service, and make sure you understand and are comfortable with the results before completing the visit.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq10-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq11-title">What is your cancellation and rescheduling policy?</h3>
+        <p class="faq-answer" id="faq11-answer" aria-labelledby="faq11-title">
+          I request at least 24 hours’ notice for cancellations or rescheduling. Late changes may be subject to a fee to compensate for reserved time. Contact me as soon as possible to make changes.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq11-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq12-title">What payment methods do you accept?</h3>
+        <p class="faq-answer" id="faq12-answer" aria-labelledby="faq12-title">
+          Payments are processed through Square, which accepts major credit cards, debit cards, Apple Pay, Google Pay, and other digital wallets. Payment is due upon service completion unless otherwise arranged.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq12-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq13-title">Are there any setup or equipment requirements before a service visit?</h3>
+        <p class="faq-answer" id="faq13-answer" aria-labelledby="faq13-title">
+          Please have all devices you want installed, updated, or fixed ready and accessible at the time of service. CtrlHome does not provide smart home devices but can assist you in choosing and gathering the right products beforehand.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq13-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq14-title">Do you offer any warranty or service guarantees?</h3>
+        <p class="faq-answer" id="faq14-answer" aria-labelledby="faq14-title">
+          Yes, I stand by my work. If you experience issues related to your service within 60 days, contact me and I’ll make it right at no additional cost.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq14-answer">Read More</button>
+      </article>
+
+      <article class="faq-item">
+        <h3 id="faq15-title">How can I contact support outside of business hours?</h3>
+        <p class="faq-answer" id="faq15-answer" aria-labelledby="faq15-title">
+          For all support inquiries outside regular hours, please email contact@ctrlhome.tech. Messages are monitored and responded to as quickly as possible. Non-urgent requests will be handled during normal business hours.
+        </p>
+        <button class="read-more" type="button" aria-expanded="false" aria-controls="faq15-answer">Read More</button>
+      </article>
+
     </section>
   </main>
 
@@ -215,21 +233,14 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.read-more').forEach(button => {
     button.addEventListener('click', () => {
       const faqItem = button.closest('.faq-item');
-      const preview = faqItem.querySelector('.faq-preview');
       const answer = faqItem.querySelector('.faq-answer');
 
       if (answer.style.display === 'block') {
         answer.style.display = 'none';
-        preview.style.whiteSpace = 'nowrap';
-        preview.style.overflow = 'hidden';
-        preview.style.textOverflow = 'ellipsis';
         button.textContent = 'Read More';
         button.setAttribute('aria-expanded', 'false');
       } else {
         answer.style.display = 'block';
-        preview.style.whiteSpace = 'normal';
-        preview.style.overflow = 'visible';
-        preview.style.textOverflow = 'clip';
         button.textContent = 'Show Less';
         button.setAttribute('aria-expanded', 'true');
       }
@@ -243,9 +254,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.faq-item').forEach(item => {
       const question = item.querySelector('h3').textContent.toLowerCase();
       const answerText = item.querySelector('.faq-answer').textContent.toLowerCase();
-      const previewText = item.querySelector('.faq-preview').textContent.toLowerCase();
 
-      const matches = question.includes(filter) || answerText.includes(filter) || previewText.includes(filter);
+      const matches = question.includes(filter) || answerText.includes(filter);
       item.style.display = matches ? '' : 'none';
     });
   });
